@@ -1,0 +1,7 @@
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Data\bin\Debug\TestApp.Data.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Data\bin\Debug\TestApp.Data.pdb
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Data\bin\Debug\TestApp.Model.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Data\bin\Debug\TestApp.Model.pdb
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Data\obj\Debug\TestApp.Data.csprojResolveAssemblyReference.cache
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Data\obj\Debug\TestApp.Data.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Data\obj\Debug\TestApp.Data.pdb

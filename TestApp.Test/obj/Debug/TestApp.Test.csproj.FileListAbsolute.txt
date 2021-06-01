@@ -1,0 +1,14 @@
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Test.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Test.pdb
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.BL.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Model.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Common.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Data.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.BL.pdb
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Model.pdb
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Common.pdb
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\bin\Debug\TestApp.Data.pdb
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\obj\Debug\TestApp.Test.csprojResolveAssemblyReference.cache
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\obj\Debug\TestApp.Test.dll
+D:\AT\Working\DEVOps\TestProject\TestApp\TestApp.Test\obj\Debug\TestApp.Test.pdb
