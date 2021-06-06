@@ -5,6 +5,7 @@ using System.Linq;
 using TestApp.Model;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 using TestApp.Data;
 #endregion
 
@@ -251,14 +252,33 @@ namespace TestApp.BL
         {
             try { 
             bool isValid = true;
+            StringBuilder sbValidationMessage = new StringBuilder();
 
             //Check if data exists
             if (userModel != null)
             {
-                isValid = !string.IsNullOrEmpty(userModel.FirstName);
-                if (isValid) isValid = !string.IsNullOrEmpty(userModel.LastName);
-                if (isValid) isValid = (userModel.Age == 0) ? false : true;
-                if (isValid) isValid = (userModel.Roles.Count == 0) ? false : true;
+                if (string.IsNullOrEmpty(userModel.FirstName))
+                {
+                    isValid = false;
+                    sbValidationMessage.Append("First name is mandatory");
+                }
+                if (string.IsNullOrEmpty(userModel.LastName))
+                {
+                    isValid = false;
+                    sbValidationMessage.Append("Last name is mandatory");
+                }
+
+                if (userModel.Age == 0)
+                {
+                    isValid = false;
+                    sbValidationMessage.Append("Age should be valid");
+                }
+
+                if (userModel.Roles.Count == 0)
+                {
+                    isValid = false;
+                    sbValidationMessage.Append("User should have atleast one role");
+                }
             }
             else
             {
@@ -274,6 +294,7 @@ namespace TestApp.BL
             }
         }
 
+        //Log the excption occured.
         public void logException(Exception exception)
         {
             throw exception;
