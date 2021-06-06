@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,13 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserRepository.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TestApp.Common\TestApp.Common.csproj">
-      <Project>{4e6281d1-bc64-4837-aa02-c8ce3efc5833}</Project>
-      <Name>TestApp.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TestApp.Data\TestApp.Data.csproj">
       <Project>{6504844a-730a-4bc3-a47b-791b82d1acae}</Project>
       <Name>TestApp.Data</Name>

@@ -2,6 +2,7 @@
 #region "References"
 using System.Collections.Generic;
 using TestApp.Model;
+using System.Linq;
 #endregion
 
 namespace TestApp.Common
@@ -12,7 +13,7 @@ namespace TestApp.Common
         /// Get the users by gender and age
         /// </summary>
         /// <returns>Returns the list of users</returns>
-        IEnumerable<UserModel>  GetUserByAge(Model.Common.Gender gender, Model.Common.Condition condition, uint age);
+        IQueryable<UserModel>  GetUserByAge(Model.Common.Gender gender, Model.Common.Condition condition, uint age);
 
         /// <summary>
         /// Get the youngest user
@@ -24,6 +25,6 @@ namespace TestApp.Common
         /// Get the users by gender and roles
         /// </summary>
         /// <returns>Returns the list of users</returns>
-        IEnumerable<UserModel>  GetUserByManagerAdminRole(Model.Common.Gender gender);
+        IQueryable<UserModel>  GetUserByManagerAdminRole(Model.Common.Gender gender);
     }
 }

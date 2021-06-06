@@ -1,4 +1,5 @@
 ﻿//Class holds the user information as no database present for this application
+//This will act as database for test
 #region "References"
 using System;
 using System.Collections.Generic;
@@ -7,18 +8,17 @@ using TestApp.Model;
 
 namespace TestApp.Data
 {
-   public class UserDBModel
+    public class DBModels 
     {
-
-        #region "Variable Declaration"
-    public List<UserModel> usersInfoRepository;
+        #region "Variables Declaration"
+        private List<UserModel> _usersInfoRepository;
         #endregion
 
         #region "Constructor"
         //Populate the user dayta to local lsit variable
-        public UserDBModel()
+        public DBModels()
         {
-            usersInfoRepository = new List<UserModel>();
+            _usersInfoRepository = new List<UserModel>();
 
             //User1
             UserModel userInfoOne = new UserModel()
@@ -34,7 +34,7 @@ namespace TestApp.Data
                     Model.Common.Role.Admin
                 }
             };
-            usersInfoRepository.Add(userInfoOne);
+            _usersInfoRepository.Add(userInfoOne);
 
             //User2
             UserModel userInfoTwo = new UserModel()
@@ -50,7 +50,7 @@ namespace TestApp.Data
                     Model.Common.Role.Manager
                 }
             };
-            usersInfoRepository.Add(userInfoTwo);
+            _usersInfoRepository.Add(userInfoTwo);
 
             //User3
             UserModel userInfoThree = new UserModel()
@@ -65,7 +65,7 @@ namespace TestApp.Data
                     Model.Common.Role.Manager
                 }
             };
-            usersInfoRepository.Add(userInfoThree);
+            _usersInfoRepository.Add(userInfoThree);
 
             //User4
             UserModel userInfoFour = new UserModel()
@@ -81,7 +81,28 @@ namespace TestApp.Data
                     Model.Common.Role.Manager
                 }
             };
-            usersInfoRepository.Add(userInfoFour);
+            _usersInfoRepository.Add(userInfoFour);
+        }
+        #endregion
+
+        #region "Functions"
+        //Returns all the users from database
+        public List<Model.UserModel> GetAllUsersFromDatabase()
+        {
+            return _usersInfoRepository;
+        }
+
+        //Add new user to database
+        public bool AddNewUserToDatabase(UserModel userModel)
+        {
+            //Add logic to save data to database
+            return true;
+        }
+
+        //Log exception into file or database as per requirement
+        public void logException(string message)
+        {
+            //Add logic to save exception into file or database as per requirement
         }
         #endregion
     }
